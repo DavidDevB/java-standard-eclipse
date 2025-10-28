@@ -7,13 +7,39 @@ public class Grades {
 	
 	public static void main(String[] args) {
 		
-		int[] grades = { 12, 15, 16, 13, 10, 17, 9, 12, 20, 11 };
+		/*int[] grades = { 12, 15, 16, 13, 10, 17, 9, 12, 20, 11 };
+		System.out.println("Minimal grade is " + findMin(grades));
+		System.out.println("Maximal grade is " + findMax(grades));
+		*/
 		
-		System.out.println("La note maximale est " + findMin(grades));
-		System.out.println("La note minimale est " + findMax(grades));
-		System.out.println("La moyenne est " + findAverage(grades));
-		System.out.println(getNames());
+		boolean students = true;
+		Scanner scan = new Scanner(System.in);
+		
+		while (students) {
+			String[] names = getNames();
 			
+			System.out.println("What are your grades?");
+			String grades = scan.nextLine();
+			String[] gradesArray = grades.split(" ");
+			
+			System.out.println(names[0] + " " + names[1] + ", your average is " + findAverageFromStudent(gradesArray));
+			
+			while (true) {
+				System.out.println("Add a student?: Y/n");
+				String doYouContinue = scan.nextLine();
+				
+				if (doYouContinue.equalsIgnoreCase("y")) {
+					break;
+				} else if (doYouContinue.equalsIgnoreCase("n")){
+					students = false;
+					break;
+					
+				} else {
+					System.out.println("Enter 'Y' or 'n'");
+				}
+			}
+		}
+		scan.close();
 	}
 	
 	public static int findMin(int[] grades) {
@@ -40,12 +66,12 @@ public class Grades {
 	}
 	
 	
-	public static int findAverage(int[] grades) {
+	public static float findAverage(int[] grades) {
 		int total = 0;
 		for (int i = 0; i < grades.length; i++) {
 			total += grades[i];
 		}
-		return total / grades.length; 
+		return (float) total / grades.length; 
 	}
 	
 	
@@ -83,7 +109,16 @@ public class Grades {
 			answered = true;
 			
 		}
-		scan.close();
 		return new String[] { firstname, lastname };
+	}
+
+	
+	public static float findAverageFromStudent(String[] grades) {
+		int[] intGrades = new int[grades.length];
+		
+		for (int i = 0; i < grades.length; i++) {
+			intGrades[i] = Integer.parseInt(grades[i]);
+		}
+		return findAverage(intGrades);
 	}
 }
