@@ -7,6 +7,9 @@ public class Game {
 	static Scanner scan = new Scanner(System.in);
 	
 	public static void main(String[] args) {
+		/**
+		 * Main function checking if the number guessed is less, more or equal to the number asked.
+		 */
 		Boolean answer = wantToPlay();
 		if (!answer) {
 			return;
@@ -34,6 +37,9 @@ public class Game {
 		
 	
 	public static boolean wantToPlay() {
+		/**
+		 * Asks the user if he wants to play.
+		 */
 		while (true) {
 			System.out.println("Do you want to play a game? Y/n");
 			String answer = scan.nextLine();
@@ -52,11 +58,17 @@ public class Game {
 	
 	
 	public static int makeANumber() {
+		/**
+		 * Returns a random number between 1 and 100
+		 */
 		return ThreadLocalRandom.current().nextInt(1, 101);
 	}
 	
 	
 	public static int chooseANumber() {
+		/**
+		 * Let the player choose a number between 1 and 100 and tells if it's too high or too low.
+		 */
 		while (true) {
 			System.out.println("Choose a number between 1 and 100: ");
 			String answer = scan.nextLine();
