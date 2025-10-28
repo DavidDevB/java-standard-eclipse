@@ -8,9 +8,9 @@ public class Notes {
 		
 		int[] notes = { 12, 15, 16, 13, 10, 17, 9, 12, 20, 11 };
 		
-		findMin(notes);
-		findMax(notes);
-		findAverage(notes);
+		System.out.println("La note maximale est " + findMin(notes));
+		System.out.println("La note minimale est " + findMax(notes));
+		System.out.println("La moyenne est " + findAverage(notes));
 		
 		
 	}
