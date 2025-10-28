@@ -6,44 +6,43 @@ public class Notes {
 	
 	public static void main(String[] args) {
 		
-		int[] notes = { 12, 15, 16, 13, 10, 17, 9, 12, 20, 11 };
+		int[] grades = { 12, 15, 16, 13, 10, 17, 9, 12, 20, 11 };
 		
-		System.out.println("La note maximale est " + findMin(notes));
-		System.out.println("La note minimale est " + findMax(notes));
-		System.out.println("La moyenne est " + findAverage(notes));
-		
-		
+		System.out.println("La note maximale est " + findMin(grades));
+		System.out.println("La note minimale est " + findMax(grades));
+		System.out.println("La moyenne est " + findAverage(grades));
+			
 	}
 	
-	public static int findMin(int[] args) {
-		int min = args[0];
-		for (int i = 0; i < args.length; i++) {
+	public static int findMin(int[] grades) {
+		int min = grades[0];
+		for (int i = 0; i < grades.length; i++) {
 			
-			if (args[i] < min) {
-				min = args[i];
+			if (grades[i] < min) {
+				min = grades[i];
 			}
 		}
 		return min;
 	}
 	
 	
-	public static int findMax(int[] args) {
-		int max = args[0];
-		for (int i = 0; i < args.length; i++) {
+	public static int findMax(int[] grades) {
+		int max = grades[0];
+		for (int i = 0; i < grades.length; i++) {
 			
-			if (args[i] > max) {
-				max = args[i];
+			if (grades[i] > max) {
+				max = grades[i];
 			}
 		}
 		return max;
 	}
 	
 	
-	public static int findAverage(int[] args) {
+	public static int findAverage(int[] grades) {
 		int total = 0;
-		for (int i = 0; i < args.length; i++) {
-			total += args[i];
+		for (int i = 0; i < grades.length; i++) {
+			total += grades[i];
 		}
-		return total / args.length; 
+		return total / grades.length; 
 	}
 }
