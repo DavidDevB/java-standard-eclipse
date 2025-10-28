@@ -10,29 +10,31 @@ public class Game {
 		/**
 		 * Main function checking if the number guessed is less, more or equal to the number asked.
 		 */
-		Boolean answer = wantToPlay();
-		if (!answer) {
-			return;
-		} else {
-			int numberToGet = makeANumber();
-			int counter = 0;
-			while (true) {
-				int numberChosen = chooseANumber();
-				if (numberChosen < numberToGet) {
-					System.out.println("It's more!");
-					counter++;
-				}
-				else if (numberChosen > numberToGet) {
-					System.out.println("It's less!");
-					counter++;
-				} else {
-					System.out.println("Bravo! You guessed right! The number was " + numberToGet + "!");
-					System.out.println("Vous avez trouvé en " + counter + " coups!");
-					scan.close();
-					return;
+		while (true) {
+			Boolean answer = wantToPlay();
+			if (!answer) {
+				return;
+			} else {
+				int numberToGet = makeANumber();
+				int counter = 0;
+				while (true) {
+					int numberChosen = chooseANumber();
+					if (numberChosen < numberToGet) {
+						System.out.println("It's more!");
+						counter++;
+					}
+					else if (numberChosen > numberToGet) {
+						System.out.println("It's less!");
+						counter++;
+					} else {
+						System.out.println("Bravo! You guessed right! The number was " + numberToGet + "!");
+						System.out.println("You guessed in " + counter + " tries!");
+						break;
+					}
 				}
 			}
 		}
+		
 	}
 		
 	
