@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Grades {
 	
 	
-	
 	public static void main(String[] args) {
 		
 		int[] grades = { 12, 15, 16, 13, 10, 17, 9, 12, 20, 11 };
@@ -13,6 +12,7 @@ public class Grades {
 		System.out.println("La note maximale est " + findMin(grades));
 		System.out.println("La note minimale est " + findMax(grades));
 		System.out.println("La moyenne est " + findAverage(grades));
+		System.out.println(getNames());
 			
 	}
 	
@@ -49,7 +49,7 @@ public class Grades {
 	}
 	
 	
-	public static String[] getName() {
+	public static String[] getNames() {
 		Scanner scan = new Scanner(System.in);
 		boolean answered = false;
 		String lastname = "";
@@ -61,8 +61,9 @@ public class Grades {
 			for (char c: lastname.toCharArray()) {
 				if (Character.isDigit(c)) {
 					System.out.println("Please enter only letters.");
+					invalid = true;
+					break;
 				}
-				invalid = true;
 			}
 			
 			if (invalid) continue;
@@ -72,7 +73,8 @@ public class Grades {
 			for (char c: firstname.toCharArray()) {
 				if (Character.isDigit(c)) {
 					System.out.println("Please enter only letters.");
-					
+					invalid = true;
+					break;
 				}
 			}
 			
@@ -80,10 +82,8 @@ public class Grades {
 			
 			answered = true;
 			
-			
 		}
 		scan.close();
 		return new String[] { firstname, lastname };
-		
 	}
 }
