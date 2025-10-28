@@ -74,20 +74,21 @@ public class Game {
 		while (true) {
 			System.out.println("Choose a number between 1 and 100: ");
 			String answer = scan.nextLine();
-			 try {
-		            int number = Integer.parseInt(answer);
+			 if (answer.matches("^-?\\d+$")) {
+				 
+	            int number = Integer.parseInt(answer);
 
-		            if (number < 1) {
-		                System.out.println("Number is too low!");
-		            } else if (number > 100) {
-		                System.out.println("Number is too high!");
-		            } else {
-		                return number;
-		            }
+	            if (number < 1) {
+	                System.out.println("Number is too low!");
+	            } else if (number > 100) {
+	                System.out.println("Number is too high!");
+	            } else {
+	                return number;
+	            }
 
-		        } catch (NumberFormatException e) {
-		            System.out.println("Must be an integer!");
-		        }
+	        } else {
+	        	System.out.print("You didn't type a number.");
+		    }
 			
 		}
 	}
