@@ -25,7 +25,7 @@ public class Strings {
 			System.out.println(replacedString);
 		}
 		if (isPalindrome(phrase)) {
-			System.out.println("The word is a palyndrom!");
+			System.out.println("The word is a palindrome!");
 			System.out.println(phrase);
 		}
 	}
