@@ -8,7 +8,7 @@ public class Game {
 	
 	public static void main(String[] args) {
 		/**
-		 * Main function checking if the number guessed is less, more or equal to the number asked.
+		 * Main function checking if the number guessed is smaller, bigger or equal than the number asked.
 		 */
 		while (true) {
 			Boolean answer = wantToPlay();
@@ -85,15 +85,12 @@ public class Game {
 	            } else {
 	                return number;
 	            }
-
+	            
 	        } else {
 	        	System.out.print("You didn't type a number.");
 		    }
-			
 		}
 	}
-	
-	
 }
 
 	
