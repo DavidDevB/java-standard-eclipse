@@ -1,5 +1,8 @@
 package exercice5;
 
+
+import java.util.Scanner;
+
 public class Strings {
 	
 	
@@ -9,7 +12,17 @@ public class Strings {
 		 * Main function which makes the program run.
 		 */
 		
-		checkWordAndIfPalindrome("Elu par cette crapule", "chien", "chat");
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter a word:");
+		String word1 = scan.nextLine();
+		
+		System.out.println("ENter another word:");
+		String word2 = scan.nextLine();
+		
+		
+		
+		checkWordAndIfPalindrome("Elu par cette crapule", word1, word2);
 	}
 	
 	
@@ -18,7 +31,8 @@ public class Strings {
 		/**
 		 * Function that checks if the phrase contains the word in input and if the phrase is a palindrome.
 		 */
-		
+	
+
 		if (phrase.contains(word1)) {
 			System.out.println("Trouvé!");
 			String replacedString = phrase.replace(word1, word2);
