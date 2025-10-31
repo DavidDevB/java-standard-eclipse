@@ -10,6 +10,10 @@ public class Operation {
 		
 		System.out.println(Mul(Integer.parseInt(args[0]), Integer.parseInt(args[1])));
 		
+		
+		/**
+		 * Loop that checks if the number is 0 and if so ends the program.
+		 */
 		while (true) {
 			if (Integer.parseInt(args[1]) == 0) {
 				System.out.print("Can't divide by zero.");
