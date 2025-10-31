@@ -39,30 +39,30 @@ Méthodes:
 Programme servant à déterminer si une phrase est un palindrome et si elle contient un mot tapé en entrée.
 
 Méthodes:
-- checkWordAndIfPalindrome(): dis à l'utilisateur si le mot ou la phrase est un palindrome.
-- isPalindrom(): vérifie que l'entrée est un palindrome ou non. Retourne un booléen.
-- revers(): inverse le sens de la phrase ou du mot.
+	- checkWordAndIfPalindrome(): dis à l'utilisateur si le mot ou la phrase est un palindrome.
+	- isPalindrom(): vérifie que l'entrée est un palindrome ou non. Retourne un booléen.
+	- revers(): inverse le sens de la phrase ou du mot.
 
 ## Exercice 6
 
 - Matrix: Programme servant à effectuer des opérations entre des matrices de nombres bidimensionnelles.
 Méthodes:
-- add(): additionne deux matrices entre elles.
-- sub(): soustrait deux matrices entre elles.
-- mul(): multiplie une matric epar un nombre.
+	- add(): additionne deux matrices entre elles.
+	- sub(): soustrait deux matrices entre elles.
+	- mul(): multiplie une matric epar un nombre.
 
 - MaxSum: Programme faisant la somme des deux nombres les plus grands issus d'une liste.
 Méthodes:
-- removeMaxNumber(): retire le nombre le plus grand d'une liste et recréé un tableau d'integers.
-- findMax(): trouve le nombre le plus grand dans une liste d'integers.
-- generateNumbers(): généère un tableau d'x integers.
+	- removeMaxNumber(): retire le nombre le plus grand d'une liste et recréé un tableau d'integers.
+	- findMax(): trouve le nombre le plus grand dans une liste d'integers.
+	- generateNumbers(): généère un tableau d'x integers.
 
 - Operation: Programme effectuant les opérations mathématiques basiques (addition, soustraction, ...).
 Méthodes:
-- add(): additionne deux nombres entre eux.
-- sub(): soustrait deux nombres entre eux.
-- mul(): multiplie deux nombres entre eux.
-- div(): divise deux nombres entre eux.
+	- add(): additionne deux nombres entre eux.
+	- sub(): soustrait deux nombres entre eux.
+	- mul(): multiplie deux nombres entre eux.
+	- div(): divise deux nombres entre eux.
 
 - Triangle: Programme affichant un triangle dans la console.
 
@@ -74,4 +74,4 @@ Programme simulant le choix d'un menu au restaurant. L'utilisateur choisit ce qu
 
 Programme effectuant l'opération de factoriel.
 Méthodes:
-- factorial(): fait la factorielle d'un nombre n.
+	- factorial(): fait la factorielle d'un nombre n.
