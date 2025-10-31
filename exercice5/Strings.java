@@ -14,6 +14,9 @@ public class Strings {
 		
 		Scanner scan = new Scanner(System.in);
 		
+		System.out.println("Enter a word or a phrase:");
+		String word3 = scan.nextLine();
+		
 		System.out.println("Enter a word:");
 		String word1 = scan.nextLine();
 		
@@ -22,7 +25,9 @@ public class Strings {
 		
 		
 		
-		checkWordAndIfPalindrome("Elu par cette crapule", word1, word2);
+		
+		
+		checkWordAndIfPalindrome(word3, word1, word2);
 	}
 	
 	
@@ -41,6 +46,8 @@ public class Strings {
 		if (isPalindrome(phrase)) {
 			System.out.println("The word is a palindrome!");
 			System.out.println(phrase);
+		} else {
+			System.out.println("It's not a palindrome!");
 		}
 	}
 	
