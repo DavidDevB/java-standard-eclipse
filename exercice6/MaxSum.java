@@ -51,7 +51,7 @@ public class MaxSum {
 	public static Integer findMax(List<Integer> nums) {
 		
 		/**
-		 * Retourne le nombre maximum à partir d'un tableau d'Integers.
+		 * Retourne le nombre maximum à partir d'une liste d'Integers.
 		 */
 		
 		int max = nums.get(0);

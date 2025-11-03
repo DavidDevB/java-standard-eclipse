@@ -13,12 +13,12 @@ public class Matrix {
 		int[][] results = new int[firstMatrix.length][firstMatrix[0].length];
 		
 		System.out.println("Matrices:");
-		System.out.println(Arrays.deepToString(firstMatrix));
-		System.out.println(Arrays.deepToString(secondMatrix));
+		System.out.println("Matrix1 " + Arrays.deepToString(firstMatrix));
+		System.out.println("Matrix2 " + Arrays.deepToString(secondMatrix));
 		System.out.println("Results:");
-		System.out.println(Arrays.deepToString(add(firstMatrix, secondMatrix, results)));
-		System.out.println(Arrays.deepToString(sub(firstMatrix, secondMatrix, results)));
-		System.out.println(Arrays.deepToString(sub(firstMatrix, 5, results)));
+		System.out.println("Addition " + Arrays.deepToString(add(firstMatrix, secondMatrix, results)));
+		System.out.println("Substraction " + Arrays.deepToString(sub(firstMatrix, secondMatrix, results)));
+		System.out.println("Multiplication (Matrix1 * x)" + Arrays.deepToString(mul(firstMatrix, 5, results)));
 	}
 	
 	public static int[][] add(int[][]mat1, int[][] mat2, int[][] res) {
@@ -57,7 +57,7 @@ public class Matrix {
 		
 	}
 	
-public static int[][] sub(int[][]mat1,int x, int[][] res) {
+	public static int[][] mul(int[][]mat1,int x, int[][] res) {
 		
 		/**
 		 * Algorithm iterating into the matrix and multiply matrix 1 by "x" to get the result.
