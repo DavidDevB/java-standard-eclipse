@@ -86,3 +86,7 @@ Métodes:
 ## Exercice 8
 
 Programme qui détermine qui d'une liste d'invités est une célébrité ou un quidam en filtrant les invités.
+
+## TP4
+
+Programme type "Mastermind" qui génère un code à 4 chiffres et qui permet d'entrer un code du même type pour le deviner. Boucle jusqu'à ce quon devine le bon code.
