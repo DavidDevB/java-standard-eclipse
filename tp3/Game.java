@@ -39,7 +39,11 @@ public class Game {
 				
 				// Entering a letter and only one letter.
 				System.out.println("Enter a letter:");
-				String letter = scan.nextLine();
+				String letter = scan.nextLine().toLowerCase();
+				if (!letter.matches("^[a-zA-Z]+$")) {
+					System.out.println("Enter only letters!");
+					continue;
+				}
 				if (letter.length() > 1 || letter.length() < 1) {
 					System.out.println("Enter one letter!");
 					continue;
