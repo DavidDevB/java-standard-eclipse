@@ -28,6 +28,7 @@ public class Strings {
 		
 		
 		checkWordAndIfPalindrome(word3, word1, word2);
+		scan.close();
 	}
 	
 	
