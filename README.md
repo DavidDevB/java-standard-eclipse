@@ -75,3 +75,14 @@ Programme simulant le choix d'un menu au restaurant. L'utilisateur choisit ce qu
 Programme effectuant l'opération de factoriel.
 Méthodes:
 	- factorial(): fait la factorielle d'un nombre n.
+	
+## TP3
+
+Programme simulant le jeu du pendu. Permet d'entrée une lettre à la fois en ayant le droit à 10 erreurs.
+Métodes:
+	- getWord(): sélectionne un mot au hasard dans une liste prédéfinie. celui-ci devra être deviné.
+	
+
+## Exercice 8
+
+Programme qui détermine qui d'une liste d'invités est une célébrité ou un quidam en filtrant les invités.
